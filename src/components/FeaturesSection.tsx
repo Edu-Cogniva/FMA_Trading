@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 const features = [
   {
     image: "https://www.mahavirricemill.com/uploads/img/years.png",
-    text: "+ Years Experience",
+    text: "7+ Years Experience",
   },
   {
     image: "https://www.mahavirricemill.com/uploads/img/productioon.png",
