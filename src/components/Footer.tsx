@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
             <a
               className="hover:text-gray-400"
             >
-              
+
             </a>
           </p>
         </div>

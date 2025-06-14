@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
+import fmaImage from "../assets/fma1.png"
+import homeImage from "../assets/home 3.png"
 
 const HeroSection: React.FC = () => {
   const images = [
     {
-      src: "src/assets/fma1.png",
+      src: fmaImage,
       className: "w-full h-full object-cover",
     },
     {
-      src: "src/assets/home 3.png",
+      src: {homeImage},
       className: "w-[100%] h-auto object-contain", // Making the second image smaller
     },
   ];
@@ -27,9 +29,8 @@ const HeroSection: React.FC = () => {
       <img
         src={images[currentImage].src}
         alt="Rice Manufacturers & Exporters in India"
-        className={`${
-          images[currentImage].className
-        } transition-opacity duration-3000 ease-in-out opacity-100`}
+        className={`${images[currentImage].className
+          } transition-opacity duration-3000 ease-in-out opacity-100`}
         style={{
           opacity: 1, // Make sure the current image is visible
         }}

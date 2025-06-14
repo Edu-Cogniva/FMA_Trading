@@ -1,36 +1,40 @@
 import React from "react";
+import rice1 from "../assets/rice 1.jpg"
+import rice2 from "../assets/rice 2.jpg"
+import rice3 from "../assets/rice 3.jpg"
+import rice4 from "../assets/rice 4.jpg"
 
 const ServicesSection: React.FC = () => {
   return (
     <section className="py-16 bg-gray-100">
-      <div  className="container mx-auto px-6">
+      <div className="container mx-auto px-6">
 
         <h2 className="text-3xl font-bold text-center mb-8">
           Our Best Varieties
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div className="bg-white p-6 rounded-lg shadow-lg text-center" 
-  style={{
-    transition: "transform 0.3s ease",
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = "scale(1.05)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "sepia(100%)";
-      img.style.transition = "filter 0.3s ease in";
-    }
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = "scale(1)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "grayscale(0%)";
-    }
-  }}
->
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center"
+            style={{
+              transition: "transform 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "sepia(100%)";
+                img.style.transition = "filter 0.3s ease in";
+              }
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "grayscale(0%)";
+              }
+            }}
+          >
             <img
-              src="src/assets/rice 1.jpg"
+              src={rice1}
               alt="Raw"
               className="w-full rounded-lg mb-4 hover-zoom"
             />
@@ -40,29 +44,29 @@ const ServicesSection: React.FC = () => {
               premium raw variety.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center" 
-  style={{
-    transition: "transform 0.3s ease",
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = "scale(1.05)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "sepia(100%)";
-      img.style.transition = "filter 0.3s ease in";
-    }
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = "scale(1)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "grayscale(0%)";
-    }
-  }}
->
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center"
+            style={{
+              transition: "transform 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "sepia(100%)";
+                img.style.transition = "filter 0.3s ease in";
+              }
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "grayscale(0%)";
+              }
+            }}
+          >
 
             <img
-              src="src/assets/rice 2.jpg"
+              src={rice2}
               alt="Steam"
               className="w-full rounded-lg mb-4 hover-zoom"
             />
@@ -72,28 +76,28 @@ const ServicesSection: React.FC = () => {
               in size when cooked.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center" 
-  style={{
-    transition: "transform 0.3s ease",
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = "scale(1.05)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "sepia(100%)";
-      img.style.transition = "filter 0.3s ease in";
-    }
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = "scale(1)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "grayscale(0%)";
-    }
-  }}
->
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center"
+            style={{
+              transition: "transform 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "sepia(100%)";
+                img.style.transition = "filter 0.3s ease in";
+              }
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "grayscale(0%)";
+              }
+            }}
+          >
             <img
-              src="src/assets/rice 03.jpg"
+              src={rice3}
               alt="White Sella"
               className="w-full rounded-lg mb-4 hover-zoom"
             />
@@ -103,28 +107,28 @@ const ServicesSection: React.FC = () => {
               delightful aroma.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center" 
-  style={{
-    transition: "transform 0.3s ease",
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = "scale(1.05)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "sepia(100%)";
-      img.style.transition = "filter 0.3s ease in";
-    }
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = "scale(1)";
-    const img = e.currentTarget.querySelector("img");
-    if (img) {
-      img.style.filter = "grayscale(0%)";
-    }
-  }}
->
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center"
+            style={{
+              transition: "transform 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "sepia(100%)";
+                img.style.transition = "filter 0.3s ease in";
+              }
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              const img = e.currentTarget.querySelector("img");
+              if (img) {
+                img.style.filter = "grayscale(0%)";
+              }
+            }}
+          >
             <img
-              src="src/assets/rice 4.jpg"
+              src={rice4}
               alt="Golden Sella"
               className="w-full rounded-lg mb-4 hover-zoom"
             />

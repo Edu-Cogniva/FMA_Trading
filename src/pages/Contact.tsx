@@ -1,4 +1,4 @@
-import contactBanner from "../assets/Contact Banner.png"; 
+import contactBanner from "../assets/Contact Banner.png";
 
 const Contact = () => {
   return (
