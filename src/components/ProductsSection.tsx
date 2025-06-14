@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import productBanner from "../assets/Product Banner.jpg"; // ✅ Import your banner
+import productBanner from "../assets/Product Banner.jpg";
+import pageImage from "../assets/Page 2.png"
+import basmatiImage from "../assets/Basmati.jpeg"
+import nonBasatiImage from "../assets/NonBasmati.jpg"
 
 const ProductsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -53,92 +56,92 @@ const ProductsSection: React.FC = () => {
       {/* Product Cards Section with fade animation */}
       <section
         ref={sectionRef}
-          className="py-16 px-4 sm:px-6 lg:px-8 -mt-10 bg-cover bg-center bg-no-repeat transition-opacity duration-700 ease-in-out opacity-0 translate-y-10"
+        className="py-16 px-4 sm:px-6 lg:px-8 -mt-10 bg-cover bg-center bg-no-repeat transition-opacity duration-700 ease-in-out opacity-0 translate-y-10"
 
         // className="min-h-[100px] py-[6.5rem] px-8 -mt-10 bg-cover bg-center bg-no-repeat transition-opacity duration-700 ease-in-out opacity-0 translate-y-10"
         style={{
-          backgroundImage: `url('/src/assets/Page 2.png')`,
+          backgroundImage: pageImage,
           minHeight: "calc(100vh - 300px)",
         }}
       >
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center w-full">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-  {/* Basmati Card */}
-  <div
-    id="Basmati"
-    className="bg-white p-6 rounded-xl shadow-xl cursor-pointer transition-transform duration-300 hover:brightness-110 active:scale-95 transform"
-    onClick={() => handleClick("Basmati")}
-  >
-    <img
-      src="src/assets/Basmati.jpeg"
-      alt="Basmati Rice"
-      className="w-full h-56 object-cover rounded-lg mb-4"
-    />
-    <h3 className="text-xl font-bold mb-2 text-black">Basmati Rice</h3>
-    <p className="text-gray-600 text-sm">
-      Long grains with a delicate texture.
-    </p>
-    <p className="text-gray-600 text-sm mb-3">
-      Perfect for biryanis, pulao, and exotic dishes.
-    </p>
-    <div className="flex justify-center">
-      <div className="arrow-container">
-        <span className="arrow-icon">→</span>
-      </div>
-    </div>
-  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+            {/* Basmati Card */}
+            <div
+              id="Basmati"
+              className="bg-white p-6 rounded-xl shadow-xl cursor-pointer transition-transform duration-300 hover:brightness-110 active:scale-95 transform"
+              onClick={() => handleClick("Basmati")}
+            >
+              <img
+                src={basmatiImage}
+                alt="Basmati Rice"
+                className="w-full h-56 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-bold mb-2 text-black">Basmati Rice</h3>
+              <p className="text-gray-600 text-sm">
+                Long grains with a delicate texture.
+              </p>
+              <p className="text-gray-600 text-sm mb-3">
+                Perfect for biryanis, pulao, and exotic dishes.
+              </p>
+              <div className="flex justify-center">
+                <div className="arrow-container">
+                  <span className="arrow-icon">→</span>
+                </div>
+              </div>
+            </div>
 
-  {/* Non-Basmati Card */}
-  <div
-    id="NonBasmati"
-    className="bg-white p-6 rounded-xl shadow-xl cursor-pointer transition-transform duration-300 hover:brightness-110 active:scale-95 transform"
-    onClick={() => handleClick("NonBasmati")}
-  >
-    <img
-      src="src/assets/NonBasmati.jpg"
-      alt="Non-Basmati Rice"
-      className="w-full h-56 object-cover rounded-lg mb-4"
-    />
-    <h3 className="text-xl font-bold mb-2 text-black">Non-Basmati Rice</h3>
-    <p className="text-gray-600 text-sm">
-      Affordable, versatile rice with a soft texture.
-    </p>
-    <p className="text-gray-600 text-sm mb-3">
-      Suitable for daily meals, fried rice, and more.
-    </p>
-    <div className="flex justify-center">
-      <div className="arrow-container">
-        <span className="arrow-icon">→</span>
-      </div>
-    </div>
-  </div>
+            {/* Non-Basmati Card */}
+            <div
+              id="NonBasmati"
+              className="bg-white p-6 rounded-xl shadow-xl cursor-pointer transition-transform duration-300 hover:brightness-110 active:scale-95 transform"
+              onClick={() => handleClick("NonBasmati")}
+            >
+              <img
+                src={nonBasatiImage}
+                alt="Non-Basmati Rice"
+                className="w-full h-56 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-bold mb-2 text-black">Non-Basmati Rice</h3>
+              <p className="text-gray-600 text-sm">
+                Affordable, versatile rice with a soft texture.
+              </p>
+              <p className="text-gray-600 text-sm mb-3">
+                Suitable for daily meals, fried rice, and more.
+              </p>
+              <div className="flex justify-center">
+                <div className="arrow-container">
+                  <span className="arrow-icon">→</span>
+                </div>
+              </div>
+            </div>
 
-  {/* ✅ South Indian Rice Card */}
-  <div
-    id="SouthIndian"
-    className="bg-white p-6 rounded-xl shadow-xl cursor-pointer transition-transform duration-300 hover:brightness-110 active:scale-95 transform"
-    onClick={() => handleClick("SouthIndian")}
-  >
-    <img
-      src="src/assets/rice 03.jpg" // Make sure this image exists
-      alt="South Indian Rice"
-      className="w-full h-56 object-cover rounded-lg mb-4"
-    />
-    <h3 className="text-xl font-bold mb-2 text-black">South Indian Rice</h3>
-    <p className="text-gray-600 text-sm">
-      Traditional rice with rich aroma.
-    </p>
-    <p className="text-gray-600 text-sm mb-3">
-      Ideal for sambar rice, curd rice, and regional delicacies.
-    </p>
-    <div className="flex justify-center">
-      <div className="arrow-container">
-        <span className="arrow-icon">→</span>
-      </div>
-    </div>
-  </div>
-</div>
+            {/* ✅ South Indian Rice Card */}
+            <div
+              id="SouthIndian"
+              className="bg-white p-6 rounded-xl shadow-xl cursor-pointer transition-transform duration-300 hover:brightness-110 active:scale-95 transform"
+              onClick={() => handleClick("SouthIndian")}
+            >
+              <img
+                src="src/assets/rice 03.jpg" // Make sure this image exists
+                alt="South Indian Rice"
+                className="w-full h-56 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-bold mb-2 text-black">South Indian Rice</h3>
+              <p className="text-gray-600 text-sm">
+                Traditional rice with rich aroma.
+              </p>
+              <p className="text-gray-600 text-sm mb-3">
+                Ideal for sambar rice, curd rice, and regional delicacies.
+              </p>
+              <div className="flex justify-center">
+                <div className="arrow-container">
+                  <span className="arrow-icon">→</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
 

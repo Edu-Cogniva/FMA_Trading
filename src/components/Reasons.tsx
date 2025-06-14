@@ -6,6 +6,9 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 
+import reasonPoster from "../assets/reason poster.png"
+import fmaImage from "../assets/FMA3.png"
+
 const Reasons: React.FC = () => {
   const reasons = [
     {
@@ -38,15 +41,15 @@ const Reasons: React.FC = () => {
     <section
       className="py-16 px-6 flex flex-col lg:flex-row items-center lg:items-start gap-12 bg-cover bg-center bg-no-repeat text-black"
       style={{
-        backgroundImage: "url('/src/assets/FMA3.png')",
+        backgroundImage: fmaImage,
       }}
     >
       {/* Left Side - Bigger Image */}
       <div className="w-full lg:w-2/3">
         <img
-          src="src/assets/reason poster.png"
+          src={reasonPoster}
           alt="Trade Excellence"
-          // className="w-full h-auto rounded-lg shadow-lg"
+        // className="w-full h-auto rounded-lg shadow-lg"
         />
       </div>
 
