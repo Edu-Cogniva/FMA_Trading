@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -16,24 +17,24 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-gray-400">
+                <Link to="/" className="hover:text-gray-400">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-gray-400">
+                <Link to="/about" className="hover:text-gray-400">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/products" className="hover:text-gray-400">
+                <Link to="/products" className="hover:text-gray-400">
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-gray-400">
+                <Link to="/contact" className="hover:text-gray-400">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -41,28 +42,28 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-4">Our Category</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/products/Basmati"
+                <Link
+                  to="/products/Basmati"
                   className="hover:text-gray-400"
                 >
                   Basmati Varieties
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/products/NonBasmati"
+                <Link
+                  to="/products/NonBasmati"
                   className="hover:text-gray-400"
                 >
                   Non Basmati Varieties
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/products/SouthIndian"
+                <Link
+                  to="/products/SouthIndian"
                   className="hover:text-gray-400"
                 >
                   South Indian Varieties
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
