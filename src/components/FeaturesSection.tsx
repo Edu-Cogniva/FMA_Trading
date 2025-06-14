@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import backgroundimage from "../assets/5.png"
 
 // ✅ Feature Data
 const features = [
@@ -33,7 +34,7 @@ const FeaturesSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-32" style={{ backgroundImage: "url('src/assets/5.png')" }} >
+    <section className="py-32" style={{ backgroundImage: backgroundimage }} >
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           

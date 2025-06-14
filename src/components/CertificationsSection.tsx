@@ -8,16 +8,6 @@ const CertificationsSection: React.FC = () => {
           Our Certifications
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {/* <img
-            src="https://www.mahavirricemill.com/uploads/img/gallery/16957903808942.jpg"
-            alt="Certification"
-            className="w-full"
-          />
-          <img
-            src="https://www.mahavirricemill.com/uploads/img/gallery/16957903875435.jpg"
-            alt="Certification"
-            className="w-full" */}
-          {/* /> */}
           <img
             src="https://www.mahavirricemill.com/uploads/img/gallery/16957903968791.jpg"
             alt="Certification"
