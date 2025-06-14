@@ -3,43 +3,63 @@ import { useParams } from "react-router-dom";
 import basmatiBanner from "../assets/Basmati Banner.png";
 import nonBasmatiBanner from "../assets/Non Basmati Banner.png";
 import southIndianBanner from "../assets/South Indian Banner.png";
+import image1 from "../assets/1.jpeg"
+import image2 from "../assets/2.jpeg"
+import image3 from "../assets/3.jpeg"
+import image4 from "../assets/4.jpeg"
+import image5 from "../assets/5.jpeg"
+import image6 from "../assets/6.jpeg"
+import image7 from "../assets/7.jpeg"
+import image8 from "../assets/8.jpeg"
+import image9 from "../assets/9.jpeg"
+import image10 from "../assets/10.jpeg"
+import image11 from "../assets/11.jpeg"
+import image12 from "../assets/12.jpeg"
+import image13 from "../assets/13.jpeg"
+import image14 from "../assets/14.jpeg"
+import image15 from "../assets/15.jpeg"
+import image16 from "../assets/16.jpeg"
+import image17 from "../assets/17.jpeg"
+import image18 from "../assets/18.jpg"
+import image19 from "../assets/19.jpg"
+import image20 from "../assets/20.jpg"
+import image21 from "../assets/21.jpg"
+import image22 from "../assets/22.jpg"
+import image23 from "../assets/23.jpg"
+import image24 from "../assets/24.jpg"
 
 // Sample Product Data
 const productData: Record<string, { name: string; image: string }[]> = {
   Basmati: [
-    { name: "Basmati Premium", image: "9.jpeg" },
-    { name: "Golden Basmati", image: "10.jpeg" },
-    { name: "Taj Mahal Basmati", image: "11.jpeg" },
-    { name: "Extra Long Basmati", image: "12.jpeg" },
-    { name: "Royal Basmati", image: "13.jpeg" },
-    { name: "Organic Basmati", image: "14.jpeg" },
-    { name: "Brown Basmati", image: "15.jpeg" },
-    { name: "Classic Basmati", image: "16.jpeg" },
+    { name: "Basmati Premium", image: image9 },
+    { name: "Golden Basmati", image: image10 },
+    { name: "Taj Mahal Basmati", image: image11 },
+    { name: "Extra Long Basmati", image: image12 },
+    { name: "Royal Basmati", image: image13 },
+    { name: "Organic Basmati", image: image14 },
+    { name: "Brown Basmati", image: image15 },
+    { name: "Classic Basmati", image: image16 },
   ],
   NonBasmati: [
-    { name: "Sona Masoori", image: "1.jpeg" },
-    { name: "IR64 Rice", image: "2.jpeg" },
-    { name: "Ponni Rice", image: "3.jpeg" },
-    { name: "Kolam Rice", image: "4.jpeg" },
-    { name: "Gobindo Bhog", image: "5.jpeg" },
-    { name: "Jeera Samba", image: "6.jpeg" },
-    { name: "Matta Rice", image: "7.jpeg" },
-    { name: "Swarna Rice", image: "8.jpeg" },
+    { name: "Sona Masoori", image: image1 },
+    { name: "IR64 Rice", image: image2 },
+    { name: "Ponni Rice", image: image3 },
+    { name: "Kolam Rice", image: image4 },
+    { name: "Gobindo Bhog", image: image5 },
+    { name: "Jeera Samba", image: image6 },
+    { name: "Matta Rice", image: image7 },
+    { name: "Swarna Rice", image: image8 },
   ],
   SouthIndian: [
-    { name: "NeiKitchadi Ponni Boiled Rice", image: "17.jpeg" },
-    { name: "Manachanallur Ponni Rice", image: "18.jpg" },
-    { name: "Rajabhogam Ponni Boiled Rice", image: "19.jpg" },
-    { name: "VIP Special Ponni Boiled Rice", image: "20.jpg" },
-    { name: "Akshaya Ponni Boiled Rice", image: "21.jpg" },
-    { name: "Tanjore Ponni Boiled Rice", image: "22.jpg" },
-    { name: "Classic Ponni Boiled Rice", image: "23.jpg" },
-    { name: "Premium Ponni Boiled Rice", image: "24.jpg" },
+    { name: "NeiKitchadi Ponni Boiled Rice", image: image17 },
+    { name: "Manachanallur Ponni Rice", image: image18 },
+    { name: "Rajabhogam Ponni Boiled Rice", image: image19 },
+    { name: "VIP Special Ponni Boiled Rice", image: image20 },
+    { name: "Akshaya Ponni Boiled Rice", image: image21 },
+    { name: "Tanjore Ponni Boiled Rice", image: image22 },
+    { name: "Classic Ponni Boiled Rice", image: image23 },
+    { name: "Premium Ponni Boiled Rice", image: image24 },
   ],
-};
-
-const getImage = (imageName: string) => {
-  return `/assets/${imageName}`;
 };
 
 const ProductDetails: React.FC = () => {
@@ -116,7 +136,7 @@ const ProductDetails: React.FC = () => {
               className="cursor-pointer bg-white p-4 rounded-lg shadow-md text-center flex flex-col items-center transition-transform duration-200 hover:scale-105"
             >
               <img
-                src={getImage(product.image)}
+                src={product.image}
                 alt={product.name}
                 className="w-full aspect-square object-cover rounded-lg mb-4"
               />

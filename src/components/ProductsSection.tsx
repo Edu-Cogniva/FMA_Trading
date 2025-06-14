@@ -4,6 +4,7 @@ import productBanner from "../assets/Product Banner.jpg";
 import pageImage from "../assets/Page 2.png"
 import basmatiImage from "../assets/Basmati.jpeg"
 import nonBasatiImage from "../assets/NonBasmati.jpg"
+import rice3Image from "../assets/rice 03.jpg"
 
 const ProductsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -124,7 +125,7 @@ const ProductsSection: React.FC = () => {
               onClick={() => handleClick("SouthIndian")}
             >
               <img
-                src="src/assets/rice 03.jpg" // Make sure this image exists
+                src={rice3Image} // Make sure this image exists
                 alt="South Indian Rice"
                 className="w-full h-56 object-cover rounded-lg mb-4"
               />
