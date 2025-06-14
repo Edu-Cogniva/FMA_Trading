@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
       className: "w-full h-full object-cover",
     },
     {
-      src: {homeImage},
+      src: homeImage,
       className: "w-[100%] h-auto object-contain", // Making the second image smaller
     },
   ];
