@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
           <div className="flex items-center justify-center sm:justify-start gap-2">
             <span>FMA Trading Welcomes You</span>
           </div>
-          <div className="flex flex-col gap-1 items-center sm:flex-row sm:items-center sm:gap-4 text-white">
+          <div className="flex flex-row flex-wrap justify-center items-center gap-x-3 gap-y-1 sm:flex-nowrap sm:justify-start sm:gap-4 text-white">
             <div className="flex items-center gap-1">
               <FaEnvelope />
               <a href="mailto:fmatrading@gmail.com" className="hover:underline">
@@ -113,7 +113,7 @@ const NavBar: React.FC = () => {
       </div>
 
       {/* Spacer */}
-      <div className="pt-[60px] md:pt-[52px]"></div>
+      <div className="pt-[144px] md:pt-[60px]"></div>
 
     </>
   );

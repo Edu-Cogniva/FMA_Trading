@@ -8,10 +8,12 @@ import ProductDetails from "./components/ProductDetails";
 import Contact from "./pages/Contact";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
 
       {/* Main Content */}
