@@ -113,7 +113,7 @@ const NavBar: React.FC = () => {
       </div>
 
       {/* Spacer */}
-      <div className="pt-[144px] md:pt-[60px]"></div>
+      <div className="pt-[50px] md:pt-[50px]"></div>
 
     </>
   );

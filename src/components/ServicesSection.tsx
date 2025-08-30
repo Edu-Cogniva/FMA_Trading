@@ -1,8 +1,8 @@
 import React from "react";
-import rice1 from "../assets/rice 1.jpg"
-import rice2 from "../assets/rice 2.jpg"
-import rice3 from "../assets/rice 3.jpg"
-import rice4 from "../assets/rice 4.jpg"
+import rice1 from "../assets/raw rice.png"
+import rice2 from "../assets/steam rice.png"
+import rice3 from "../assets/white sella.png"
+import rice4 from "../assets/golden sella.png"
 
 const ServicesSection: React.FC = () => {
   return (
