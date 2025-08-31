@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-4">Contact Detail</h3>
             <p className="text-sm">Ahamed Marzooth</p>
             <p className="text-sm">+91-7010085338</p>
-            <p className="text-sm">fmatrading@gmail.com</p>
+            <p className="text-sm">fmatradingtpr@gmail.com</p>
             <p className="text-sm">
               FMA Trading, Tirupattur, Sivagangai District.
             </p>

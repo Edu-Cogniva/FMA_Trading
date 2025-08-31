@@ -24,8 +24,8 @@ const NavBar: React.FC = () => {
           <div className="flex flex-wrap justify-center sm:justify-end gap-3 text-white">
             <div className="flex items-center gap-1">
               <FaEnvelope />
-              <a href="mailto:fmatrading@gmail.com" className="hover:underline">
-                fmatrading@gmail.com
+              <a href="mailto:fmatradingtpr@gmail.com" className="hover:underline">
+                fmatradingtpr@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-1">

@@ -104,7 +104,7 @@ const ProductDetails: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const email = "alphiyapaul003@gmail.com";
+    const email = "fmatradingtpr@gmail.com";
     const subject = `Rice Inquiry - ${selectedRice}`;
     const body = `Hello,\n\nMy name is ${userName}. I am interested in learning more about ${selectedRice}.\n\nMessage: ${message}\n\nYou can contact me at: ${userEmail}.\n\nThank you!`;
 
