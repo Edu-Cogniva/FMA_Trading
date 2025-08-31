@@ -3,30 +3,30 @@ import { useParams } from "react-router-dom";
 import basmatiBanner from "../assets/Basmati Banner.png";
 import nonBasmatiBanner from "../assets/Non Basmati Banner.png";
 import southIndianBanner from "../assets/South Indian Banner.png";
-import image1 from "../assets/sona mansoori.jpeg"
+import image1 from "../assets/sona mansoori.png"
 import image2 from "../assets/IR64.png"
-import image3 from "../assets/ponni rice.jpg"
-import image4 from "../assets/kolam rice.jpg"
+import image3 from "../assets/ponni rice.png"
+import image4 from "../assets/kolam rice.png"
 import image5 from "../assets/Ghobindo.png"
-import image6 from "../assets/jeera samba.jpg"
+import image6 from "../assets/jeera samba.png"
 import image7 from "../assets/matta rice.png"
 import image8 from "../assets/swarna rice.png"
-import image9 from "../assets/Basmati Premium.jpg"
+import image9 from "../assets/basmati premium.png"
 import image10 from "../assets/golden basmati.png"
-import image11 from "../assets/Taj mahal basmati.jpg"
+import image11 from "../assets/Taj mahal basmati.png"
 import image12 from "../assets/12.jpeg"
-import image13 from "../assets/royal basmati.jpg"
-import image14 from "../assets/organic basmati.jpeg"
+import image13 from "../assets/royal basmati.png"
+import image14 from "../assets/organic basmati.png"
 import image15 from "../assets/brown basmati.png"
 import image16 from "../assets/classic basmati.png"
-import image17 from "../assets/nei kichadi.jpg"
-import image18 from "../assets/manachallur.jpg"
+import image17 from "../assets/nei kichadi.png"
+import image18 from "../assets/manachallur.png"
 import image19 from "../assets/rajabhogam ponni.png"
-import image20 from "../assets/vip special.jpg"
-import image21 from "../assets/akshaya.jpg"
-import image22 from "../assets/tanjore boiled ponni.jpg"
-import image23 from "../assets/classic ponni boiled rice.jpg"
-import image24 from "../assets/premium ponni boiled rice.jpg"
+import image20 from "../assets/vip special.png"
+import image21 from "../assets/akshaya.png"
+import image22 from "../assets/tanjore boiled ponni.png"
+import image23 from "../assets/classic ponni boiled rice.png"
+import image24 from "../assets/premium ponni boiled rice.png"
 
 // Sample Product Data
 const productData: Record<string, { name: string; image: string }[]> = {
@@ -46,7 +46,7 @@ const productData: Record<string, { name: string; image: string }[]> = {
     { name: "Ponni Rice", image: image3 },
     { name: "Kolam Rice", image: image4 },
     { name: "Gobindo Bhog", image: image5 },
-    { name: "Seeraga Samba", image: image6 },
+    { name: "Jeera Samba", image: image6 },
     { name: "Matta Rice", image: image7 },
     { name: "Swarna Rice", image: image8 },
   ],
