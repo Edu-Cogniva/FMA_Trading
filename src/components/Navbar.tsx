@@ -111,7 +111,7 @@ const NavBar: React.FC = () => {
       </header>
 
       {/* Spacer to avoid content being hidden behind navbar */}
-      <div className="h-[65px] md:h-[50px]" />
+      <div className="h-[78px] md:h-[50px]" />
     </>
   );
 };
