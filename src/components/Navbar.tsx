@@ -16,14 +16,12 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <div className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
-
+      {/* Fixed Navbar */}
+      <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
         {/* Top Bar */}
-        <div className="bg-[#35678A] text-white text-sm py-2 px-4 flex flex-col gap-2 text-center sm:flex-row sm:justify-between sm:items-center sm:text-left">
-          <div className="flex items-center justify-center sm:justify-start gap-2">
-            <span>FMA Trading Welcomes You</span>
-          </div>
-          <div className="flex flex-row flex-wrap justify-center items-center gap-x-3 gap-y-1 sm:flex-nowrap sm:justify-start sm:gap-4 text-white">
+        <div className="bg-[#35678A] text-white text-sm py-2 px-4 flex flex-col sm:flex-row sm:justify-between sm:items-center text-center">
+          <span className="mb-1 sm:mb-0">FMA Trading Welcomes You</span>
+          <div className="flex flex-wrap justify-center sm:justify-end gap-3 text-white">
             <div className="flex items-center gap-1">
               <FaEnvelope />
               <a href="mailto:fmatrading@gmail.com" className="hover:underline">
@@ -37,30 +35,31 @@ const NavBar: React.FC = () => {
           </div>
         </div>
 
-        {/* Main Navbar */}
-        <div className="flex items-center justify-between py-4 px-4 md:px-8 border-b border-gray-300">
+        {/* Main Navigation */}
+        <div className="flex items-center justify-between px-4 md:px-8 py-3 border-b border-gray-200">
           {/* Logo */}
-          <div>
-            <img src={Logo} className="h-10" alt="FMA Trading Logo" />
-          </div>
+          <Link to="/">
+            <img src={Logo} alt="FMA Trading Logo" className="h-10" />
+          </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-6 text-gray-600 text-base">
+          {/* Desktop Links */}
+          <nav className="hidden md:flex gap-6 text-gray-700 text-base">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`${location.pathname === link.path
+                className={`hover:text-[#F0832C] ${
+                  location.pathname === link.path
                     ? "text-[#F0832C] font-semibold underline"
                     : ""
-                  }`}
+                }`}
               >
                 {link.name}
               </Link>
             ))}
           </nav>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Menu Button */}
           <div className="md:hidden text-2xl text-[#35678A]">
             {menuOpen ? (
               <FaTimes onClick={() => setMenuOpen(false)} />
@@ -69,7 +68,7 @@ const NavBar: React.FC = () => {
             )}
           </div>
 
-          {/* Call Section */}
+          {/* Desktop Call Info */}
           <div className="hidden md:flex items-center gap-2 text-[#35678A]">
             <div className="bg-[#35678A] text-white p-2 rounded-full">
               <FaPhoneAlt />
@@ -81,7 +80,7 @@ const NavBar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 shadow-md">
             {navLinks.map((link) => (
@@ -89,16 +88,15 @@ const NavBar: React.FC = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setMenuOpen(false)}
-                className={`block px-4 py-3 text-gray-700 hover:bg-gray-100 ${location.pathname === link.path
+                className={`block px-4 py-3 text-gray-700 hover:bg-gray-100 ${
+                  location.pathname === link.path
                     ? "text-[#F0832C] font-semibold"
                     : ""
-                  }`}
+                }`}
               >
                 {link.name}
               </Link>
             ))}
-
-            {/* Phone section on mobile */}
             <div className="flex items-center gap-2 px-4 py-3 text-[#35678A] border-t border-gray-200">
               <div className="bg-[#35678A] text-white p-2 rounded-full">
                 <FaPhoneAlt />
@@ -110,11 +108,10 @@ const NavBar: React.FC = () => {
             </div>
           </div>
         )}
-      </div>
+      </header>
 
-      {/* Spacer */}
-      <div className="pt-[144px] md:pt-[60px]"></div>
-
+      {/* Spacer to avoid content being hidden behind navbar */}
+      <div className="h-[80px] md:h-[50px]" />
     </>
   );
 };

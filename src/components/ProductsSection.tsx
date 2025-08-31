@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import productBanner from "../assets/Product Banner.jpg";
 import pageImage from "../assets/Page 2.png"
-import basmatiImage from "../assets/Basmati.jpeg"
-import nonBasatiImage from "../assets/NonBasmati.jpg"
-import rice3Image from "../assets/rice 03.jpg"
+import basmatiImage from "../assets/basmati rice.jpg"
+import nonBasatiImage from "../assets/Non-Basmati-Rice.jpg"
+import rice3Image from "../assets/south indian rice.jpg"
 
 const ProductsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);

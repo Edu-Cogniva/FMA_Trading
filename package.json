@@ -1,6 +1,7 @@
 {
   "name": "rice-mill",
   "private": true,
+  "homepage": "https://www.fmatrading.in",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
