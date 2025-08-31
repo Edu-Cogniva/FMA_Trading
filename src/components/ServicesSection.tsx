@@ -1,5 +1,5 @@
 import React from "react";
-import rice1 from "../assets/raw rice.png"
+import rice1 from "../assets/raw rice.jpg"
 import rice2 from "../assets/steam rice.png"
 import rice3 from "../assets/white sella.png"
 import rice4 from "../assets/golden sella.png"

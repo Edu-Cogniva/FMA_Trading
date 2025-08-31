@@ -1,4 +1,5 @@
 import React from "react";
+import packs from "../assets/packaging.png"; 
 
 const PackagingOptions: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const PackagingOptions: React.FC = () => {
       <div className="flex flex-col items-center mt-8">
         <div className="relative flex justify-center items-center">
           <img
-            src="https://www.mahavirricemill.com/uploads/img/custombanner.png"
+            src={packs}
             alt="FABRIC"
             className="w-full h-full rounded-lg shadow-lg"
           />
